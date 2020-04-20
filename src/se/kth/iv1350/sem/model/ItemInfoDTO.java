@@ -1,7 +1,7 @@
 package se.kth.iv1350.sem.model;
 
 /**
- * Class representing data for an item. Instances are immutable.
+ * Represents data for an item. Instances are immutable.
  */
 public class ItemInfoDTO {
     private final int price;
@@ -11,7 +11,7 @@ public class ItemInfoDTO {
     private final String name;
 
     /**
-     * Creates a new immutable instance of ItemInfoDTO, representing a unique item.
+     * Creates a new immutable instance of ItemInfoDTO, representing data of an unique item.
      * @param price Price of item.
      * @param VATRate Tax-rate in percentage of item.
      * @param description Description of item.
