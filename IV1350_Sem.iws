@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0bc3a4b-ee95-4174-9fe8-25bf61cdd977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/IV1350_Sem.iws" beforeDir="false" afterPath="$PROJECT_DIR$/IV1350_Sem.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/ItemInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/ItemInfoDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
