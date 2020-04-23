@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0bc3a4b-ee95-4174-9fe8-25bf61cdd977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/IV1350_Sem.iws" beforeDir="false" afterPath="$PROJECT_DIR$/IV1350_Sem.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/ItemInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/ItemInfoDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +46,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1587666292221">
+    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1587677871174">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587666292221" />
+    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587677871174" />
   </component>
 </project>

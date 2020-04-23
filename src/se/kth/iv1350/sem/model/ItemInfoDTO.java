@@ -18,6 +18,7 @@ public class ItemInfoDTO {
      * @param description Description of item.
      * @param id Unique id-number of item.
      * @param name Item name.
+     * @param discount  Item discount as a <code>DiscountDTO</code> object. <code>null</code> if it has no discount.
      */
     public ItemInfoDTO(int price, float VATRate, String description, int id, String name, DiscountDTO discount) {
         this.price = price;
