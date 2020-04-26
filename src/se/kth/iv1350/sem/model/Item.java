@@ -26,6 +26,14 @@ public class Item {
     }
 
     /**
+     * Decrements the amount field with the amount given as parameter.
+     * @param amount Amount to change item amount by.
+     */
+    public void decreaseAmount(int amount) {
+        addAmount(-amount);
+    }
+
+    /**
      * Checks if this item is a collection of items specified by an <code>ItemInfoDTO</code>. <code>true</code> if
      * this items <code>ItemInfoDTO</code> id is equal to the sent in <code>ItemInfoDTO</code>.
      * @param item Info to compare to.
@@ -33,6 +41,26 @@ public class Item {
      */
     boolean isItem(ItemInfoDTO item) {
         return this.info.getId() == item.getId();
+    }
+
+    /**
+     * Checks if this collection of items is a collection of items specified by the same <code>ItemInfoDTO</code>.
+     * <code>true</code> if this items <code>ItemInfoDTO</code> id is equal to the sent in <code>ItemInfoDTO</code>.
+     * @param item Item to compare to.
+     * @return <code>true</code> if item id's are equal, false otherwise.
+     */
+    public boolean isItem(ItemDTO item) {
+        return isItem(item.getInfo());
+    }
+
+    /**
+     * Checks if this collection of items is a collection of items specified by the same <code>ItemInfoDTO</code>.
+     * <code>true</code> if this items <code>ItemInfoDTO</code> id is equal to the sent in <code>ItemInfoDTO</code>.
+     * @param item Item to compare to.
+     * @return <code>true</code> if item id's are equal, false otherwise.
+     */
+    public boolean isItem(Item item) {
+        return isItem(item.getInfo());
     }
 
     /**

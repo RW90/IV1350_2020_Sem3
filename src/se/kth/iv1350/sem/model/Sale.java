@@ -24,18 +24,40 @@ public class Sale {
         this.customerDiscount = null;
     }
 
+    /**
+     * Returns the price of the VAT of the sale.
+     * @return The VAT amount.
+     */
     public int getTotalVAT() {
         return totalVAT;
     }
 
+    /**
+     * Returns the price of the sale including VAT.
+     * @return Total price of the sale.
+     */
     public int getTotalPrice() {
         return totalPrice;
     }
 
-    public ArrayList<Item> getItems() {
-        return items;
+    /**
+     * Returns the <code>Item</code> objects added to the
+     * sale in an <code>ArrayList</code> of <code>ItemDTO</code> objects.
+     * @return <code>ArrayList</code> of <code>ItemDTO</code> representing this sales items.
+     */
+    public ArrayList<ItemDTO> getItems() {
+        ArrayList<ItemDTO> returnItems = new ArrayList<ItemDTO>();
+        for(Item itemToCopy : items) {
+            ItemDTO copiedItem = new ItemDTO(itemToCopy);
+            returnItems.add(copiedItem);
+        }
+        return returnItems;
     }
 
+    /**
+     * Gets the discount of the customer doing the sale.
+     * @return Discount as a <code>DiscountDTO</code> object.
+     */
     public DiscountDTO getCustomerDiscount() {
         return customerDiscount;
     }
@@ -55,14 +77,22 @@ public class Sale {
     }
 
     private void increasePrice(ItemInfoDTO item, int amount) {
-        this.priceExcludingVAT += item.getPrice() * amount;
-        this.totalVAT += (int) (item.getPrice() * item.getVATRate() * amount);
+        int itemPrice = item.getPrice() * amount;
+        int VATPrice = (int) (item.getPrice() * item.getVATRate() * amount);
+        if(item.getDiscount() != null) {
+            itemPrice = (int) (itemPrice * item.getDiscount().getRate());
+            VATPrice = (int) (VATPrice * item.getDiscount().getRate());
+        }
+        this.priceExcludingVAT += itemPrice;
+        this.totalVAT += VATPrice;
         this.totalPrice = this.priceExcludingVAT + this.totalVAT;
     }
+
     private void addNewItem(ItemInfoDTO item, int amount) {
         Item newItem = new Item(amount, item);
         items.add(newItem);
     }
+
     private void increaseItemAmount(ItemInfoDTO item, int amount) {
         int itemIndex = findIndexOfItem(item);
         Item itemToIncrement = items.get(itemIndex);
