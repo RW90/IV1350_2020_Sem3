@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0bc3a4b-ee95-4174-9fe8-25bf61cdd977" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/IV1350_Sem.iws" beforeDir="false" afterPath="$PROJECT_DIR$/IV1350_Sem.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/CustomerRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/CustomerRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/ItemRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/ItemRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/RegistryCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/RegistryCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/SaleRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/integration/SaleRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/SaleLogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/model/SaleLogDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/sem/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/sem/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +68,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1587903839372">
+    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1587918011211">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587903839372" />
+    <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587918011211" />
     <state width="1315" height="178" key="GridCell.Tab.0.bottom" timestamp="1587909643551">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

@@ -14,7 +14,7 @@ public class Sale {
     private DiscountDTO customerDiscount;
 
     /**
-     * Creates a new instance of <code>Sale</code> class.
+     * Creates a new empty instance of <code>Sale</code> class. Initiates prices to 0.
      */
     public Sale() {
         this.priceExcludingVAT = 0;
@@ -63,17 +63,33 @@ public class Sale {
     }
 
     /**
-     * Add an item to the current sale and increment price accordingly.
+     * Adds a discount to the <code>Sale</code> in form of a <code>DiscountDTO</code>
+     * and applies its rate to the price.
+     * @param discount Discount to apply.
+     */
+    public void addDiscount(DiscountDTO discount) {
+        customerDiscount = discount;
+        totalVAT = (int)(totalVAT * customerDiscount.getRate());
+        priceExcludingVAT = (int) (priceExcludingVAT * customerDiscount.getRate());
+        totalPrice = totalVAT + priceExcludingVAT;
+    }
+
+    /**
+     * Add an item to the current sale and increment price accordingly. Returns the amount
+     * of the item currently in the sale.
      * @param item Item to add, represented by an <code>ItemInfoDTO</code>.
      * @param amount The amount of specified item to add.
+     * @return The updated amount of the item added in sale(after potential increased amount).
      */
-    public void addItem(ItemInfoDTO item, int amount) {
+    public int addItem(ItemInfoDTO item, int amount) {
+        int itemAmountInSale = amount;
         if(isItemInSale(item)) {
-            increaseItemAmount(item, amount);
+            itemAmountInSale = increaseItemAmount(item, amount);
         } else {
             addNewItem(item, amount);
         }
         increasePrice(item, amount);
+        return itemAmountInSale;
     }
 
     private void increasePrice(ItemInfoDTO item, int amount) {
@@ -93,10 +109,11 @@ public class Sale {
         items.add(newItem);
     }
 
-    private void increaseItemAmount(ItemInfoDTO item, int amount) {
+    private int increaseItemAmount(ItemInfoDTO item, int amount) {
         int itemIndex = findIndexOfItem(item);
         Item itemToIncrement = items.get(itemIndex);
         itemToIncrement.addAmount(amount);
+        return itemToIncrement.getAmount();
     }
 
     private boolean isItemInSale(ItemInfoDTO searchedItem) {
