@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0bc3a4b-ee95-4174-9fe8-25bf61cdd977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/META-INF/Seminarium 3.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/controller/ControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/integration/CustomerRegistryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/integration/ItemRegistryTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/integration/RegistryCreatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/model/CashRegisterTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/model/ItemTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Seminarium 3/se/kth/iv1350/sem/model/SaleTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IV1350_Sem.iws" beforeDir="false" afterPath="$PROJECT_DIR$/IV1350_Sem.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminarium 3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminarium 3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminarium 3/se/kth/iv1350/sem/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminarium 3/se/kth/iv1350/sem/view/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/CustomerRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/CustomerRegistryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/ItemRegistryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/ItemRegistryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/RegistryCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/RegistryCreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/integration/SaleRegistryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/CashRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/CashRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/ItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/SaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/sem/model/SaleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in Seminarium 3">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.sem.startup.Main" />
       <module name="Seminarium 3" />
@@ -64,8 +79,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in Seminarium 3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Seminarium 3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Seminarium 3" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -84,26 +108,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588105927980">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="92" y="92" width="1176" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1588105927980" />
     <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1587918011211">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="484" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587918011211" />
-    <state width="1315" height="178" key="GridCell.Tab.0.bottom" timestamp="1587938544061">
+    <state width="1315" height="178" key="GridCell.Tab.0.bottom" timestamp="1588107493067">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1315" height="178" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587938544061" />
-    <state width="1315" height="178" key="GridCell.Tab.0.center" timestamp="1587938544061">
+    <state width="1315" height="178" key="GridCell.Tab.0.bottom/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1588107493067" />
+    <state width="1315" height="178" key="GridCell.Tab.0.center" timestamp="1588107493067">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1315" height="178" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587938544061" />
-    <state width="1315" height="178" key="GridCell.Tab.0.left" timestamp="1587938544061">
+    <state width="1315" height="178" key="GridCell.Tab.0.center/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1588107493067" />
+    <state width="1315" height="178" key="GridCell.Tab.0.left" timestamp="1588107493067">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1315" height="178" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587938544061" />
-    <state width="1315" height="178" key="GridCell.Tab.0.right" timestamp="1587938544061">
+    <state width="1315" height="178" key="GridCell.Tab.0.left/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1588107493067" />
+    <state width="1315" height="178" key="GridCell.Tab.0.right" timestamp="1588107493067">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1315" height="178" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1587938544061" />
+    <state width="1315" height="178" key="GridCell.Tab.0.right/0.0.1360.728/1360.0.1536.824@0.0.1360.728" timestamp="1588107493067" />
     <state x="384" y="256" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587938065717">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

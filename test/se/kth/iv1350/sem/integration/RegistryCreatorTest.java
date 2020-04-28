@@ -21,13 +21,25 @@ class RegistryCreatorTest {
 
     @Test
     void getCustomerRegistry() {
+        CustomerRegistry customerRegistry = registryCreator.getCustomerRegistry();
+        boolean res = customerRegistry instanceof CustomerRegistry;
+        boolean expRes = true;
+        assertEquals(res, expRes, "Customer registry unable to be created.");
     }
 
     @Test
     void getItemRegistry() {
+        ItemRegistry itemRegistry = registryCreator.getItemRegistry();
+        boolean res = itemRegistry instanceof ItemRegistry;
+        boolean expRes = true;
+        assertEquals(res, expRes, "Item registry unable to be created.");
     }
 
     @Test
     void getSaleRegistry() {
+        SaleRegistry saleRegistry = registryCreator.getSaleRegistry();
+        boolean res = saleRegistry instanceof SaleRegistry;
+        boolean expRes = true;
+        assertEquals(res, expRes, "Sale registry unable to be created.");
     }
 }
