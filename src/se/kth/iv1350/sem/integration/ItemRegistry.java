@@ -28,17 +28,23 @@ public class ItemRegistry {
     /**
      * Fetches an items info from the mock DB.
      * @param id Id of item to fetch.
-     * @return <code>ItemInfoDTO</code> object containing item info if found, otherwise <code>null</code>.
+     * @return <code>ItemInfoDTO</code> object containing fetched item info.
+     * @throws DatabaseConnectionFailureException When system is unable to communicate with the external server (mock implementation)
+     * @throws InvalidItemIdException When item with id can't be found in the database.
      */
-    public ItemInfoDTO fetchItem(int id) {
+
+    public ItemInfoDTO fetchItem(int id) throws InvalidItemIdException{
+        if(id == -10) {
+            throw new DatabaseConnectionFailureException("ERR CODE 000: Connection time out with item registry.");
+        }
         ItemInfoDTO returnItem = null;
         for(Item itemInDb : itemsInDB) {
             if(itemInDb.getInfo().getId() == id) {
                 returnItem = itemInDb.getInfo();
-                break;
+                return returnItem;
             }
         }
-        return returnItem;
+        throw new InvalidItemIdException(id);
     }
 
     /**

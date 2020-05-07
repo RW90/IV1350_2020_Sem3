@@ -12,6 +12,7 @@ public class Sale {
     private int totalPrice;
     private ArrayList<Item> items;
     private DiscountDTO customerDiscount;
+    private ArrayList<SaleObserver> observers;
 
     /**
      * Creates a new empty instance of <code>Sale</code> class. Initiates prices to 0.
@@ -22,6 +23,33 @@ public class Sale {
         this.totalVAT = 0;
         this.items = new ArrayList<Item>();
         this.customerDiscount = null;
+        this.observers = new ArrayList<SaleObserver>();
+    }
+
+    /**
+     * Add an observer to the sale.
+     * @param observer Observer to be added.
+     */
+    public void addObserver(SaleObserver observer) {
+        this.observers.add(observer);
+    }
+
+    private void notifyObservers() {
+        for(SaleObserver observer : observers) {
+            observer.saleHasFinished(totalPrice);
+        }
+    }
+
+    /**
+     * To be called to finish up a sale. Logs the completed sale.
+     * @param store Information about the store that the sale took place in.
+     * @param payment Payment received from customer.
+     * @param change Change owed to customer.
+     * @return Log of the sale as a <code>SaleLogDTO</code> instance.
+     */
+    public SaleLogDTO finishSale(StoreDTO store, int payment, int change) {
+        this.notifyObservers();
+        return new SaleLogDTO(this, store, payment, change);
     }
 
     /**

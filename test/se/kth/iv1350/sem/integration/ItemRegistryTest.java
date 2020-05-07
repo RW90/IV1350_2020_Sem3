@@ -22,7 +22,12 @@ class ItemRegistryTest {
 
     @Test
     void fetchItem() {
-        ItemInfoDTO testItem = testRegistry.fetchItem(1);
+        ItemInfoDTO testItem = null;
+        try {
+            testItem = testRegistry.fetchItem(1);
+        } catch(Exception e) {
+            fail("Exception thrown when fetching valid item.");
+        }
         boolean res = testItem instanceof ItemInfoDTO;
         boolean expRes = true;
         assertEquals(res, expRes, "Unable to fetch valid item.");
@@ -30,9 +35,25 @@ class ItemRegistryTest {
 
     @Test
     void fetchInvalidItem() {
-        ItemInfoDTO testItem = testRegistry.fetchItem(-1);
-        boolean res = testItem instanceof ItemInfoDTO;
-        boolean expRes = false;
-        assertEquals(res, expRes, "Able to fetch invalid item.");
+        ItemInfoDTO testItem = null;
+        try {
+            testItem = testRegistry.fetchItem(-1);
+            fail("Exception not thrown when fetching invalid item.");
+        } catch(Exception e) {
+            boolean res = e instanceof InvalidItemIdException;
+            assertTrue(res, "Wrong exception thrown when fetching invalid item.");
+        }
+    }
+
+    @Test
+    void databaseConnectionFailure() {
+        ItemInfoDTO testItem = null;
+        try {
+            testItem = testRegistry.fetchItem(-10);
+            fail("Exception not thrown when simulating database connection failure.");
+        } catch(Exception e) {
+            boolean res = e instanceof DatabaseConnectionFailureException;
+            assertTrue(res, "Wrong exception thrown when simulating database connection failure.");
+        }
     }
 }

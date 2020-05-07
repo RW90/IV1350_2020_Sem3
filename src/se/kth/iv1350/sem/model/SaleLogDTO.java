@@ -23,7 +23,7 @@ public class SaleLogDTO {
      * @param payment Payment received from the customer.
      * @param change Amount of money to give back to customer.
      */
-    public SaleLogDTO(Sale saleToLog, StoreDTO store, int payment, int change) {
+    SaleLogDTO(Sale saleToLog, StoreDTO store, int payment, int change) {
         this.store = store;
         this.payment = payment;
         this.change = change;
