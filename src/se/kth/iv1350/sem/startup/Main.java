@@ -27,8 +27,7 @@ public class Main {
         ExceptionLogHandler errorHandler = new ExceptionLogHandler();
         ArrayList<SaleObserver> saleObservers = new ArrayList<>();
         saleObservers.add(new TotalRevenueView());
-
         Controller contr = new Controller(registries, printer, storeInfo, errorHandler, saleObservers);
-        new View(contr);
+        new View(contr).testRun();
     }
 }

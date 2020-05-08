@@ -75,4 +75,11 @@ class SaleTest {
         assertEquals(resPrice, expPrice, "Same item price is not added correctly");
         assertEquals(resAmount, expAmount, "Adding item doesn't add upp amount");
     }
+
+    @Test
+    void finishSaleTest() {
+        SaleLogDTO loggedSale = testObj.finishSale(new StoreDTO("Test adress", "Test name"), 500, 500);
+        boolean res = loggedSale instanceof SaleLogDTO;
+        assertTrue(res, "finishSale doesn't return a sale log.");
+    }
 }

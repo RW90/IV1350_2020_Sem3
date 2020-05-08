@@ -4,10 +4,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import se.kth.iv1350.sem.integration.*;
-import se.kth.iv1350.sem.model.DiscountDTO;
-import se.kth.iv1350.sem.model.ItemInfoDTO;
-import se.kth.iv1350.sem.model.SaleStatusDTO;
-import se.kth.iv1350.sem.model.StoreDTO;
+import se.kth.iv1350.sem.model.*;
+import se.kth.iv1350.sem.view.TotalRevenueView;
+
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +15,7 @@ class ControllerTest {
     Controller testObj;
     @BeforeEach
     void setUp() {
-        testObj = new Controller(new RegistryCreator(), new Printer(), new StoreDTO("Test adress", "Test name"), new ExceptionLogHandler());
+        testObj = new Controller(new RegistryCreator(), new Printer(), new StoreDTO("Test adress", "Test name"), new ExceptionLogHandler(), new ArrayList<SaleObserver>());
         testObj.newSale();
     }
 

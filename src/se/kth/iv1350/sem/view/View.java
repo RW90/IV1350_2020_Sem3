@@ -19,10 +19,12 @@ public class View {
     public View(Controller contr) {
         this.contr = contr;
         this.errorDisplay = new ErrorMessageHandler();
-        testRun();
     }
 
-    private void testRun(){
+    /**
+     * Starting a simulation of the program
+     */
+    public void testRun(){
         System.out.println("Initializing test run...");
         System.out.println("Starting sale");
         contr.newSale();
