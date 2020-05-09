@@ -10,7 +10,8 @@ public class InvalidItemIdException extends Exception {
      * Creates a new instance of <code>InvalidItemIdException</code>.
      * @param itemId Item id that wasn't in the database.
      */
-    public InvalidItemIdException(int itemId) {
+    public InvalidItemIdException(String msg, int itemId) {
+        super(msg);
         this.itemId = itemId;
     }
 

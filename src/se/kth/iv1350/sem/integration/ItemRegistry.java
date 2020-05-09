@@ -44,7 +44,7 @@ public class ItemRegistry {
                 return returnItem;
             }
         }
-        throw new InvalidItemIdException(id);
+        throw new InvalidItemIdException("Item not found in database", id);
     }
 
     /**
